@@ -11,4 +11,4 @@ pretrained/
 internal/
 submission/
 dataset_construction/sanity.ipynb
-codalab.sh
+insert_license.py

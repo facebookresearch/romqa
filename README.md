@@ -2,6 +2,7 @@
 
 This repository contains the source code for [RoMQA: A Benchmark for Robust, Multi-evidence, Multi-answer Question Answering
 ](https://arxiv.org/abs/2210.14353).
+If you are looking for the leaderboard, please see [this Codalab worksheet](https://worksheets.codalab.org/worksheets/0xc13c82ceb0414938b758a318dcc21dae).
 If you find this helpful, please cite:
 
 ```
@@ -141,21 +142,7 @@ This should give you a resulting bundle with your open dev evaluation results wi
 
 Once you see that the resulting bundle contains the results you expect, upload your test predictions to CodaLab.
 At this point, you should have six bundles.
-Please make a Github pull request to modify `submissions.md` and add your entry with the following information:
-
-```
-Your method name
-Your name
-Your affiliation
-Your paper link (can update this later)
-<my_closed_dev_uid>
-<my_closed_dev_eval_results_uid>
-<my_closed_test_uid>
-<my_open_dev_uid>
-<my_open_dev_eval_results_uid>
-<my_open_test_uid>
-```
-
+Please make a Github pull request to modify `submissions.md` and add your entry [as follows](https://github.com/facebookresearch/romqa/pull/2).
 The RoMQA authors will then evaluate your test bundles against the test data.
 Once the evaluation is finished, the bundle IDs of `<my_closed_test_eval_results_uid>` and `<my_open_test_eval_results_uid>` will be added to your pull request and the pull request will be merged.
 Your results will then be displayed on the leaderboard.

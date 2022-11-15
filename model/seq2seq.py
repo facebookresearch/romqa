@@ -1,3 +1,9 @@
+# Copyright (c) Meta Platforms, Inc. and affiliates.
+# All rights reserved.
+#
+# This source code is licensed under the license found in the
+# LICENSE file in the root directory of this source tree.
+
 from ordered_set import OrderedSet
 from wrangl.learn import SupervisedModel
 from transformers import AutoTokenizer, AutoModelForSeq2SeqLM as AutoModel
