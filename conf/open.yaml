@@ -1,0 +1,9 @@
+# see config options in https://github.com/vzhong/wrangl/wrangl/conf
+defaults:
+  - generate
+  - _self_
+
+ftrain: '${oc.env:PWD}/data/open/top_20.train.json.bz2'
+fval: '${oc.env:PWD}/data/open/top_20.dev.json.bz2'
+ftest: '${oc.env:PWD}/data/open/top_20.test.noanswer.json.bz2'
+model: 'seq2seq_dpr_nl'

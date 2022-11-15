@@ -1,0 +1,49 @@
+# see config options in https://github.com/vzhong/wrangl/wrangl/conf
+defaults:
+  - wrangl_supervised_experiment
+  - _self_
+
+##########
+# training
+##########
+early_stopping:
+    monitor: 'val_f1'
+    mode: 'max'
+optim:
+  params:
+    lr: 0.000005
+gpus: 1
+batch_size: 2
+val_batch_size: 2
+collate_fn: 'ignore'  # use 'ignore' to pass an identity collate and define featurize instead
+max_steps: 1_000_000
+log_every_n_steps: 2000
+val_check_interval: 2000
+val_sample_size: 100
+
+
+##########
+# naming
+##########
+model: 'seq2seq'
+project: 'mdmqma-open-1'
+
+
+###########
+# params
+###########
+lm: '${oc.env:PWD}/dataset_construction/pretrained/bart-large'
+ftrain: '${oc.env:PWD}/dataset_construction/evidence/{evidence}/train.json.bz2'
+fval: '${oc.env:PWD}/dataset_construction/evidence/{evidence}/dev.json.bz2'
+ftest: '${oc.env:PWD}/dataset_construction/evidence/{evidence}/test.noanswer.json.bz2'
+num_processes: 1
+generate:
+  num_beams: 3
+  max_context_length: 1024
+  max_label_length: 128
+  max_pred_label_length: 1024
+test_only: false
+test_resume: 'last.ckpt'
+limit_val_batches: 0.3
+single_example_per_cluster: false
+limit: false

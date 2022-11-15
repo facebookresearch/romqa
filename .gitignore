@@ -1,0 +1,14 @@
+saves/
+lightning_logs/
+*.pkl
+*.bz2
+*.json
+*.db
+*.zip
+.ipynb_checkpoints/
+.DS_Store
+pretrained/
+internal/
+submission/
+dataset_construction/sanity.ipynb
+codalab.sh

@@ -1,0 +1,9 @@
+[submodule "dataset_construction/bart-large"]
+	path = dataset_construction/pretrained/bart-large
+	url = https://huggingface.co/facebook/bart-large
+[submodule "dataset_construction/facebook-dpr-ctx_encoder-multiset-base"]
+	path = dataset_construction/pretrained/facebook-dpr-ctx_encoder-multiset-base
+	url = https://huggingface.co/sentence-transformers/facebook-dpr-ctx_encoder-multiset-base
+[submodule "dataset_construction/facebook-dpr-question_encoder-multiset-base"]
+	path = dataset_construction/pretrained/facebook-dpr-question_encoder-multiset-base
+	url = https://huggingface.co/sentence-transformers/facebook-dpr-question_encoder-multiset-base

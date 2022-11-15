@@ -1,0 +1,7 @@
+qwikidata==0.4.1
+tqdm==4.59.0
+rank_bm25
+spacy
+sentence_transformers
+scikit-learn
+wrangl

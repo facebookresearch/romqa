@@ -1,0 +1,4 @@
+wrangl
+hydra-core
+torch
+ujson
