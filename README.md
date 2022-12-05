@@ -31,11 +31,13 @@ Run open setting
 ```bash
 python train_baselines.py --config-name open --multirun hydra/launcher=slurm hydra.launcher.partition=<partition> model=seq2seq_nl,seq2seq_dpr_nl hydra.launcher.constraint=volta32gb seed=1,2,3,4,5 project=open-1
 ```
+For reference, you can download a trained checkpoint [here](https://s3.us-west-1.wasabisys.com/vzhong-public/RoMQA/checkpoints/seq2seq_dpr_nl.zip).
 
 Run closed setting
 ```bash
 python train_baselines.py --config-name closed --multirun hydra/launcher=slurm hydra.launcher.partition=<partition> model=binary_nl,binary_dpr_nl hydra.launcher.constraint=volta32gb seed=1,2,3,4,5 project=closed-1
 ```
+For reference, you can download a trained checkpoint [here](https://s3.us-west-1.wasabisys.com/vzhong-public/RoMQA/checkpoints/binary_dpr_nl.zip).
 
 Run gold evidence setting
 ```bash
