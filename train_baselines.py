@@ -100,7 +100,7 @@ def main(cfg):
 
     evaluate_dataset(val, dataset_val, cfg.fval, Model, cfg)
 
-    with open(cfg.ftest, 'rt') as f:
+    with bz2.open(cfg.ftest, 'rt') as f: 
         test = json.load(f)
 
     if cfg.debug:
